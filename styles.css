@@ -1,0 +1,46 @@
+ul{
+    padding-left: 0;
+}
+
+li{
+    background: green;
+    width: min-content;
+    list-style-type: none;
+    padding: 1em;
+    margin: 0.5em;
+ 
+}
+
+.busy{
+    background-color: orange;
+}
+
+.done{
+    background: red;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+li .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+  }
+  
+li:hover .tooltiptext {
+    visibility: visible;
+  }
